@@ -8,7 +8,8 @@ const app = express();
 //requerimos el modulo de mongoose
 const mongoose = require('mongoose');
 //conectamos a la bd
-mongoose.connect('mongodb://localhost/crud-mongo')
+mongoose.connect('mongodb+srv://renato:renato12345678@cluster0.gxeej.mongodb.net/Culturaeeee?retryWrites=true&w=majority')
+
     .then(db => console.log('bd conectada')) //se usa una promesa para ver si se conecto
     .catch(err => console.log(err));
 //----------------------------------------//
